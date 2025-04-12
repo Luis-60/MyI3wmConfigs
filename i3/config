@@ -5,6 +5,12 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+# Brightness up
+bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+
+# Brightness down
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+
 # start picom
 exec_always --no-startup-id picom --config ~/.config/picom.conf
 
